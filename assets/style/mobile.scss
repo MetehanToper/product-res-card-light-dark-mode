@@ -1,0 +1,138 @@
+$font-fam:'Oswald', sans-serif;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $font-fam;
+}
+
+.smart-watch-img,
+.headphones-img,
+.smairpods-img{
+    width: 100%;
+    height: 50%;
+}
+
+body{
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.mode-icon{
+    margin-right: 100px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    
+    .icon-mode{
+        border: 1px solid #1c1c1c;
+        border-radius: 10px;
+        width: 35px;
+        height: 45px;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .moon:hover{
+        cursor: pointer;
+        background-color: #1c1c1c;
+        color: #fff;
+    }
+    .sun:hover{
+        cursor: pointer;
+        background-color: #fffc;
+        color: #1c1c1c;
+    }
+
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+    .card{
+        border: 1px solid #f2f2f2;
+        border-radius: 15px;
+        padding: 10px;
+        width: 300px;
+        height: 450px;
+        background-color: #fff;
+
+        
+        .card-text{
+            margin-top: 20px;
+            h5{
+                font-weight: 400;
+                font-size: 1rem;
+            }
+            h1{
+                font-size: 1.5rem;
+            }
+            .star-icon{
+                margin-top: 5px;
+            }
+            .price{
+                margin-top: 5px;
+                strike{
+                    font-size: .9rem;
+                }
+                strong{
+                    font-size: 1.2rem;
+                    margin-left: 5px;
+                }
+            }
+        }
+        .btn{
+            width: 95%;
+            height: 50px;
+            margin-top: 20px;
+            border-radius: 10px;
+            background-color: #1c1c1c;
+            color: #f2f2f2;
+            font-size: 1.2rem;
+        }
+        .btn:hover{
+            cursor: pointer;
+            background-color: #666666;
+            border: 1px solid #666666;
+        }
+    }
+    .card:hover{
+        transform:scale(1.08);
+        box-shadow: 5px 5px 5px #666666;
+    }
+
+}
+
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+    .card{
+        background-color: #666666;
+        color: #f2f2f2;
+        border: 1px solid  #666666;
+    }  
+    .card-text{
+        background-color: #666666;
+    }  
+    .fa-star {
+        color: #ffea00;
+      }
+    .price {
+        color: #fff;
+        strike{
+            font-weight: 400;
+            color: #d3d3d3;
+        }
+      }
+    .btn{
+          background-color: #2f4f4f;
+          color:#ffffff ;
+
+    }
+  }
